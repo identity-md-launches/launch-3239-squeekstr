@@ -1,0 +1,20 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "SqueekstrToken",
+    "name": "SQUEEKSTR",
+    "symbol": "SQKSTR",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {"poolBps":8000,"initialMarketCapWei":"4500000000000000000000","remainderTo":"0x18e0a43cb0236c3e2e6f6f229fc2ca36299a4636"},
+  "notes": "SqueekstrToken mints 1,000,000,000 SQUEEKSTR (SQKSTR), with 18 decimals, once to msg.sender in its argument-free constructor. There is no owner, subsequent minting, transfer fee, pause or blocklist. Holders may burn their own tokens and approve allowances through ERC-2612 permit. No application contracts or initialization calls are required. pool.initialPrice is provenance only; the deployer derives the opening price from economics.initialMarketCapWei and totalSupply."
+}
